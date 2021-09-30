@@ -1,0 +1,170 @@
+.brb {
+    border-bottom: 3px solid #000;
+}
+
+.jsp {
+    justify-content: space-between;
+}
+
+.vd {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a::after {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+.mla {
+    margin-left: auto;
+}
+
+.mra {
+    margin-right: auto;
+}
+
+.jsc {
+    justify-content: center;
+}
+
+.jst {
+    justify-content: end;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.cw {
+    width: max-content;
+}
+
+body {
+    background-color: #0047AB;
+}
+
+.brt {
+    border-top: 2px solid #000;
+}
+
+a :hover {
+    color: yellow;
+}
+
+.exp {
+    text-decoration: none;
+}
+
+.grid-con {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    column-gap: 20px;
+
+    row-gap: 20px;
+
+}
+
+.grid-cont {
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style: none;
+    column-gap: 20px;
+
+    row-gap: 20px;
+
+}
+
+.grid-conta {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    column-gap: 20px;
+
+    row-gap: 20px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.index-1 {
+    background-image: url('bg4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.div-main {
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .grid-cont,
+    .grid-conta {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .grid-con {
+        grid-template-columns: auto auto;
+    }
+
+    .div-main {
+        margin-top:20px;
+        margin-left:20px;
+        margin-right:20px;
+        margin-bottom:20px;
+        padding: auto;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+p,
+h1 {
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: unset;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 40px;
+        opacity: 0%;
+    }
+
+
+    to {
+        margin-left: 0px;
+        opacity: 110%;
+
+    }
+}
