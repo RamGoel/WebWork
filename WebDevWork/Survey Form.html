@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tachyons.min.css">
+</head>
+
+<body class="bg-white white ">
+    <div class="main tc georgia ma4 br3 bg-black  pa3">
+        <h1 id="title" class="w-100 "> Survey Form</h1>
+        <p id="description" class=""> If you have used our services, please fill the form</p>
+        <form id="survey-form center">
+            <input id="name" class="pa2 w-60 ma2 " name="name" required id="name-label" placeholder="Enter Full Name">
+            <input id="email" class="pa2 w-60 ma2 " name="email" required id="email-label" placeholder="Enter E-mail">
+            <input id="number" class="pa2 w-60 ma2 " name="number" type="tel" min="1" max="10" required placeholder="Enter Contact Number">
+
+           <div class="tc db"> <label class="ma2 georgia"> Male<input id="name" class=" ma3 " name="male" type="radio" required></label>
+            <label class="ma2 georgia"> Female<input id="name" class=" ma3 " name="female" type="radio" required></div>
+              <div class="tc db"> <label class="ma2 georgia"> Remember<input id="name" class=" ma3 " type="checkbox" name="" value="hello"
+                        required checked>
+                    <label class="ma2 georgia"> Notify<input id="name" class=" ma3 " type="checkbox" name=""
+                            value="hello" required checked></div> 
+
+<textarea class="w-60 pa2 " placeholder="Any Comments"></textarea>
+<button id="submit" type="submit" class="db pa3 center ma2 bg-green bn br3 white georgia">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
