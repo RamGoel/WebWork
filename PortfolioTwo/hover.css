@@ -1,0 +1,107 @@
+
+
+* {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.carde{
+    position: relative;
+    
+}
+.card-data{
+    background-color:white;
+    padding: 10px;
+    width: 340px;
+    height: 200px;
+    position: absolute;
+    bottom: 3;
+    left: 0;
+    animation: back 1s;
+    
+    border-radius: 10px;
+    border-top: 5px solid black;
+    
+    
+}
+
+.card-imge    {
+    width: 340px;
+    height: 200px;
+    border-radius: 10px;
+    border: 10px solid black;
+    box-shadow: 0px 1px 10px;
+    
+    animation: back1 1s forwards;
+
+}
+
+
+.carde:hover  .card-imge{
+        animation: move1 1s forwards;
+}
+
+.carde:hover .card-data{
+    animation: move 1s forwards;
+}
+
+
+
+
+
+.card-desc{
+    font-size: small;
+}
+
+.card-title{
+    font-size: x-large;
+}
+
+.card-link{
+    padding: 7px ;
+    background: #000;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px ;
+    cursor: pointer;
+    
+}
+
+@keyframes move {
+    from{
+        transform: translateY(0);
+        
+    }
+    to{
+        transform: translateY(95px);
+        
+    }
+}
+@keyframes move1 {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-110px);
+    }
+}
+@keyframes back {
+    from{
+        
+        transform: translateY(95px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes back1 {
+    from{
+        
+        transform: translateY(-110px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
