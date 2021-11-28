@@ -2,47 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebDevWork</title>
-    <link rel="stylesheet" href="tachyons.min.css">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SiteDesigns</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+
+    body{
+      justify-content: center;
+    }
+    .card-1 {
+    width:fit-content;
+    height: fit-content;
+    position:relative;
+    box-shadow: 0.3px 0.4px 3px;
+    border-radius: 10px;
+  
+
+
+}
+
+.page-title{
+    color: white;
+    font-size: 125px;
+    
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.main-head{
+    text-align: center;
+    background-color:orangered;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title-p{
+    text-align: center;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.hover-txt{
+    font-size: 15px;
+    color: yellow;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin:40px;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: space-around;
+
+    
+}
+
+.card-1 img{
+  width: 300px;
+
+
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-radius: 10px;
+}
+
+.btn-card {
+    background-color: white;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.398)
+}
+
+.card-1:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 60%;
+    left: 46%;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width:700px) {
+    .projects {
+       
+        grid-template-columns: auto;
+      
+       justify-items: center;
+    }
+}
+</style>
 </head>
 
-<body class="bg-light-blue">
-    <h1 class="tc lucida pa2 bg-purple white mt0">WebDevWork <span class="f6 lucida"> by Ram Goel</span> </h1>
-    <div class="links bg-light-blue pa2 tc flex  flex-column">
-          <a href="https://ramgoel.github.io/APIWebApps/" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">API using Apps</button></a>
-          <a href="https://ramgoel.github.io/SiteDesigns/" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Front End Website Designs</button></a>
-        <a href="WebDevWork/cards.html" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Website Cards</button></a>
-        <a href="https://ramgoel.github.io/RamGoel/" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Portfolio Website</button></a>
-        
-       <hr>
-        <a href="Portfolio/index.html" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Portfolio Website</button></a>
-         <a href="PortfolioTwo/index.html" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Portfolio Website Two</button></a>
-        <a href="WebDevWork/Tribute Page.html" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Tribute Page</button></a>
-        <a href="WebDevWork/Landing Page.html" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Landing Page</button></a>
-        <a href="WebDevWork/Documentation Website.html" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Documentation Website Page</button></a>
-        <a href="SinglePagePortfolio/index.html" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Single Page Portfolio</button></a>
-        <a href="WebDevWork/Portfolio Website.html" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Portfolio Website Page</button></a>
-        <a href="WebDevWork/Survey Form.html" class="link ma"><button
-                class="lnk-btn pa3 bg-black white w-80-ns w-40-l  mb2 ma  bn lucida br2">Survey form</button></a>
+<body>
+  <h1 class="main-head">WebsiteDesigns<span class="hover-txt">  Click on Name for Live View</span></h1>
+  <div class="projects container ">
+
+
+
+    <div class="card-1">
+      <img src="im1.png" alt="Avatar" class="image">
+     
+        <a href="PortfolioWebsiteDesign/index.html" class="text"><button class="btn-card">API using Apps</button></a>
+
+      </div>
+    <div class="card-1">
+      <img src="im5.png" alt="Avatar" class="image">
+     
+        <a href="PortfolioWebsiteDesign/index.html" class="text"><button class="btn-card">Portfolio Website</button></a>
+
+      </div>
+    <div class="card-1">
+      <img src="im2.png" alt="Avatar" class="image">
+     
+        <a href="PortfolioWebsiteDesign/index.html" class="text"><button class="btn-card">Website Designs</button></a>
+
+      </div>
+    <div class="card-1">
+      <img src="im3.png" alt="Avatar" class="image">
+     
+        <a href="PortfolioWebsiteDesign/index.html" class="text"><button class="btn-card">Backend Apps</button></a>
+
+      </div>
+    <div class="card-1">
+      <img src="im4.png" alt="Avatar" class="image">
+     
+        <a href="PortfolioWebsiteDesign/index.html" class="text"><button class="btn-card">Website Cards</button></a>
+
+      </div>
       
-        
-        
-    </div>
+     
+  </div>
+
+
 </body>
 
 </html>
