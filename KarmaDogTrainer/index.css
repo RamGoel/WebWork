@@ -1,0 +1,144 @@
+body{
+    background: url('images/db2.jpg');
+    background-size:cover;
+    padding: 0;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a :hover{
+    color: yellow;
+}
+
+.header{
+    padding:5px;
+    background: black;
+
+}
+
+.headerLinks{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+}
+
+
+
+.headLink{
+    text-decoration: none;
+    color: white;
+}
+
+.midSection{
+   
+    justify-content: space-between;
+    padding-top: 40px;
+    padding: 20px;
+    width: 20%;
+}
+
+
+.queryForm{
+    background: rgb(0, 115, 255);
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.queryFormInput{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.queryFormBtn{
+    padding: 10px;
+    background-color: orangered;
+    color:white;
+    width: fit-content;
+    border:none;
+    border-radius: 5px;
+    justify-self: center;
+    margin:auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.featuredSection{
+    display: flex;
+    justify-content: space-between;
+  
+    margin:20px;
+    padding: 20px;
+    background-color: rgb(0, 35, 77);
+    border-radius:10px
+    
+}
+
+.featuredItem{
+    height: 50px;
+}
+
+
+.awardSection{
+    display: flex;
+    justify-content: space-between;
+  
+    margin:20px;
+    padding: 20px;
+    background-color: rgb(0, 35, 77);
+    border-radius:10px
+    
+}
+
+.awardItem{
+    height: 50px;
+}
+
+
+
+
+
+
+.dogCards{
+    display:grid;
+    grid-template-columns: auto auto  ;
+    row-gap: 20px;
+    column-gap: 20px;
+    width:90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.dogCard{
+    background-color: white;
+    border-radius: 10px;
+    border:none;
+    width: 200px;
+    padding:10px;
+    justify-content: center;
+    text-align:center
+}
+
+
+.footer{
+    color: white;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 0;
+    font-size:13px
+}
+
+.sectionsGroup{
+    display: flex;
+}
