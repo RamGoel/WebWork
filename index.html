@@ -6,170 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Work</title>
-  <link rel="stylesheet" href="index.css">
-  <style>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/tachyons.min.css">
 
-    body{
-      justify-content: center;
-    }
-    .card-1 {
-    width:fit-content;
-    height: fit-content;
-    position:relative;
-    box-shadow: 0.3px 0.4px 3px;
-    border-radius: 10px;
-  
-
-
-}
-
-.page-title{
-    color: white;
-    font-size: 125px;
-    
-}
-body{
-    padding: 0;
-    margin: 0;
-    background-color: white;
-}
-
-.main-head{
-    text-align: center;
-    background-color:orangered;
-    color: white;
-    padding: 10px;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.title-p{
-    text-align: center;
-}
-
-.image {
-    border-radius: 10px;
-}
-
-.hover-txt{
-    font-size: 15px;
-    color: yellow;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin:40px;
-    row-gap: 30px;
-    column-gap: 30px;
-    justify-content: space-around;
-
-    
-}
-
-.card-1 img{
-  width: 300px;
-
-
-}
-
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-    border-radius: 10px;
-}
-
-.btn-card {
-    background-color: white;
-    padding: 10px;
-    font-size: 17px;
-    border-radius: 5px;
-    color: black;
-    border: 1px solid rgba(0, 0, 0, 0.398)
-}
-
-.card-1:hover .overlay {
-    opacity: 1;
-}
-
-.text {
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 60%;
-    left: 46%;
-    text-align: center;
-}
-
-
-
-
-
-@media screen and (max-width:700px) {
-    .projects {
-       
-        grid-template-columns: auto;
-      
-       justify-items: center;
-    }
-}
-</style>
 </head>
 
 <body>
-  <h1 class="main-head">WebDevWork<span class="hover-txt">  Click on Name for Live View</span></h1>
+  <h1 class="main-head">WebDevWork<span class="hover-txt"> Click on Name for Live View</span></h1>
   <div class="projects container ">
 
+    <div class="card-1">
+      <img src="images/im1.png" alt="Avatar" class="image">
 
+      <a href="api apps/index.html" class="text"><button class="btn-card">API using Apps</button></a>
+
+    </div>
+    <div class="card-1">
+      <img src="images/im5.png" alt="Avatar" class="image">
+
+      <a href="https://ramgoel.github.io/" class="text"><button class="btn-card">Portfolio Website</button></a>
+
+    </div>
+    <div class="card-1">
+      <img src="images/im2.png" alt="Avatar" class="image">
+
+      <a href="https://ramgoel.github.io/SiteDesigns/" class="text"><button class="btn-card">Website
+          Designs</button></a>
+
+    </div>
+    <div class="card-1">
+      <img src="images/im3.png" alt="Avatar" class="image">
+
+      <a href="PortfolioWebsiteDesign/index.html" class="text"><button class="btn-card">Backend Apps</button></a>
+
+    </div>
+    <div class="card-1">
+      <img src="images/im4.png" alt="Avatar" class="image">
+
+      <a href="WebDevWork/cards.html" class="text"><button class="btn-card">Website
+          Cards</button></a>
+
+    </div>
 
     <div class="card-1">
-      <img src="im1.png" alt="Avatar" class="image">
-     
-        <a href="https://ramgoel.github.io/APIWebApps/" class="text"><button class="btn-card">API using Apps</button></a>
+      <img src="images/im6.png" alt="Avatar" class="image">
 
-      </div>
-    <div class="card-1">
-      <img src="im5.png" alt="Avatar" class="image">
-     
-        <a href="https://ramgoel.github.io/RamGoel/" class="text"><button class="btn-card">Portfolio Website</button></a>
+      <a href="work.html" class="text"><button class="btn-card">Newbie Work</button></a>
 
-      </div>
-    <div class="card-1">
-      <img src="im2.png" alt="Avatar" class="image">
-     
-        <a href="https://ramgoel.github.io/SiteDesigns/" class="text"><button class="btn-card">Website Designs</button></a>
+    </div>
 
-      </div>
-    <div class="card-1">
-      <img src="im3.png" alt="Avatar" class="image">
-     
-        <a href="PortfolioWebsiteDesign/index.html" class="text"><button class="btn-card">Backend Apps</button></a>
 
-      </div>
-    <div class="card-1">
-      <img src="im4.png" alt="Avatar" class="image">
-     
-        <a href="https://ramgoel.github.io/WebWork/WebDevWork/cards.html" class="text"><button class="btn-card">Website Cards</button></a>
-
-      </div>
-    
-    <div class="card-1">
-      <img src="im6.png" alt="Avatar" class="image">
-     
-        <a href="index1.html" class="text"><button class="btn-card">Newbie Work</button></a>
-
-      </div>
-      
-     
   </div>
 
 
